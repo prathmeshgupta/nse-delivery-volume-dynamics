@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nse-delivery-volume-dynamics"
+version = "0.1.0"
+description = "NSE daily equity deliverable quantity, delivery percentage, and institutional accumulation tracker"
+authors = [{ name = "Prathmesh Gupta" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.28.0",
+    "pandas>=2.0.0",
+    "pyarrow>=14.0.0",
+    "numpy>=1.24.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
